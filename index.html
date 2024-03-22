@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Researcher Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* You can include custom styles here */
+    </style>
 </head>
-
 <body class="bg-gray-100">
 
     <!-- Navigation -->
@@ -52,15 +53,15 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-semibold mb-8">Our Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg p-6 shadow-md">
+                <div class="service-card">
                     <h3 class="text-xl font-semibold mb-4">Research Catalog</h3>
                     <p>Explore our extensive catalog of research papers, articles, and studies.</p>
                 </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
+                <div class="service-card">
                     <h3 class="text-xl font-semibold mb-4">Collaboration Opportunities</h3>
                     <p>Connect with fellow researchers and find opportunities for collaboration.</p>
                 </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
+                <div class="service-card">
                     <h3 class="text-xl font-semibold mb-4">Resource Center</h3>
                     <p>Access tools, datasets, and resources to support your research endeavors.</p>
                 </div>
@@ -74,17 +75,17 @@
             <h2 class="text-3xl font-semibold mb-8">Recent Publications</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Sample publication cards -->
-                <div class="bg-white rounded-lg p-6 shadow-md">
+                <div class="publication-card">
                     <h3 class="text-xl font-semibold mb-4">Publication Title</h3>
                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a href="#" class="text-blue-500 font-semibold hover:underline">Read More</a>
                 </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
+                <div class="publication-card">
                     <h3 class="text-xl font-semibold mb-4">Publication Title</h3>
                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a href="#" class="text-blue-500 font-semibold hover:underline">Read More</a>
                 </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
+                <div class="publication-card">
                     <h3 class="text-xl font-semibold mb-4">Publication Title</h3>
                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a href="#" class="text-blue-500 font-semibold hover:underline">Read More</a>
@@ -108,12 +109,10 @@
                 </div>
                 <div>
                     <form action="#" method="POST" class="grid grid-cols-1 gap-4">
-                        <input type="text" name="name" placeholder="Your Name" class="p-4 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500">
-                        <input type="email" name="email"
-                        <input type="email" name="email" placeholder="Your Email" class="p-4 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500">
-                        <textarea name="message" rows="5" placeholder="Your Message" class="p-4 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"></textarea>
-                        <button type="submit" class="bg-blue-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-600 transition duration-300">Send Message</button>
-                    </form>
+                        <input type="text" name="name" placeholder="Your Name" class="input-field">
+                        <input type="email" name="email" placeholder="Your Email" class="input-field">
+                        <textarea name="message" rows="5" placeholder="Your Message" class="input-field"></textarea>
+                        <button type="submit" class="submit-button">Send Message</button>
                 </div>
             </div>
         </div>
@@ -127,5 +126,4 @@
     </footer>
 
 </body>
-
 </html>

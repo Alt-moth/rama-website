@@ -1,81 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rama Srinivasan</title>
-  <!-- Tailwind CSS CDN for prototyping -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Custom Style Overrides -->
-  <style>
-    .gradient {
-      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rama Srinivasan</title>
+<style>
+  body { font-family: 'Arial', sans-serif; }
+  .header { background-color: #333; color: white; padding: 10px 20px; }
+  .nav { padding: 0; margin: 0; list-style-type: none; text-align: center; }
+  .nav li { display: inline; margin-right: 20px; }
+  .nav a { text-decoration: none; color: white; }
+  .content { margin: 20px; }
+  .footer { background-color: #333; color: white; text-align: center; padding: 10px 20px; position: absolute; bottom: 0; width: 100%; }
+  .card { box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; padding: 20px; margin-bottom: 20px; }
+  .container { padding: 2px 16px; }
+</style>
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<body>
 
-<header class="bg-white shadow">
-  <nav class="container mx-auto px-6 py-4">
-    <div class="flex justify-between items-center">
-      <a href="#" class="text-3xl font-bold gradient text-transparent bg-clip-text">Rama Srinivasan</a>
-      <div class="flex items-center space-x-4">
-        <a href="#about" class="py-2 px-4 gradient bg-clip-text text-transparent hover:text-gray-300 transition ease-in-out duration-150">About</a>
-        <a href="#projects" class="py-2 px-4 gradient bg-clip-text text-transparent hover:text-gray-300 transition ease-in-out duration-150">Projects</a>
-        <a href="#publications" class="py-2 px-4 gradient bg-clip-text text-transparent hover:text-gray-300 transition ease-in-out duration-150">Publications</a>
-        <a href="#contact" class="py-2 px-4 gradient bg-clip-text text-transparent hover:text-gray-300 transition ease-in-out duration-150">Contact</a>
-      </div>
-    </div>
-  </nav>
-</header>
+<div class="header">
+  <h1>Rama Srinivasan</h1>
+</div>
 
-<main>
-  <section id="hero" class="gradient text-white py-20">
-    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-      <div class="flex flex-col w-full lg:w-1/2 justify-center items-start p-8">
-        <h1 class="text-3xl md:text-5xl p-2 bg-opacity-75 rounded">Rama Srinivasan</h1>
-        <h2 class="text-xl md:text-2xl my-4">Anthropologist. Author. Feminist.</h2>
-        <p class="mb-8">Exploring intersections of Law, Gender, Sexuality, and Migration.</p>
-        <a href="#contact" class="bg-white text-gray-800 font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider hover:bg-gray-200 transition ease-in-out duration-150">Contact Me</a>
-      </div>
-      <div class="w-full lg:w-1/2 lg:py-6 text-center">
-        <!-- Add your profile image here -->
-        <svg class="fill-current text-white opacity-25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="100" height="100"><path d="M2 11a9 9 0 102 0V3.6C2.7 2.6 1.4 2 0 2v9z"/><path d="M20 11a9 9 0 11-2 0V3.6c1.3.6 2.6 1.2 2 2.4V11z"/></svg>
-      </div>
-    </div>
-  </section>
+<ul class="nav">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About Me</a></li>
+  <li><a href="#workshops">Writing Workshops</a></li>
+  <li><a href="#publications">Publications</a></li>
+</ul>
 
-  <!-- Sections for About, Projects, Publications, and Contact not shown for brevity -->
-
-  <!-- Contact section with updated design -->
-  <section id="contact" class="container mx-auto my-8 px-6 py-10">
-    <div class="w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-lg shadow-xl p-8 text-white">
-      <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
-      <form action="#" method="POST">
-        <!-- Form fields -->
-      </form>
-    </div>
-  </section>
-</main>
-
-<footer class="bg-white">
-  <div class="container mx-auto px-6 py-4">
-    <p class="text-gray-700 text-center">
-      Rama Srinivasan © 2024
-    </p>
-    <div class="text-center text-gray-500">
-      rama.srinivasan@alumni.brown.edu
+<div class="content">
+  <div class="card">
+    <div class="container">
+      <h2>Anthropologist. Author. Feminist.</h2>
+      <p>Hi, I am Rama Srinivasan, an anthropologist, author, academic, consultant, and feminist. Here's a brief overview of my work and the issues I am passionate about.</p>
     </div>
   </div>
-</footer>
+  
+  <!-- Add more cards for other content sections -->
+  
+</div>
 
-<!-- Optional JavaScript for menu toggle -->
-<script>
-  // Simple function to handle the mobile menu toggle
-  function toggleMobileMenu(menu) {
-    menu.classList.toggle('open');
-  }
-</script>
+<div class="footer">
+  <p>Contact: rama_srinivasan@example.com</p>
+</div>
 
 </body>
 </html>

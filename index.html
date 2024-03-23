@@ -1,109 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rama Srinivasan</title>
-    <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Custom Styles */
-        .bg-blue-custom {
-            background-color: #007bff;
-        }
-
-        .text-blue-custom {
-            color: #007bff;
-        }
-
-        .text-white-custom {
-            color: #fff;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rama Srinivasan</title>
+  <!-- Insert your Tailwind CSS link here -->
 </head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
-<body class="font-sans bg-blue-50">
-
-    <!-- Header -->
-    <header class="bg-blue-custom py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-white-custom">Rama Srinivasan</h1>
-            <nav>
-                <ul class="flex space-x-4 text-white-custom">
-                    <li><a href="#" class="hover:text-white">Home</a></li>
-                    <li><a href="#about" class="hover:text-white">About Me</a></li>
-                    <li><a href="#workshops" class="hover:text-white">Writing Workshops</a></li>
-                    <li><a href="#re-nup" class="hover:text-white">RE-NUP</a></li>
-                    <li><a href="#publications" class="hover:text-white">Publications</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="container mx-auto mt-8">
-
-        <!-- About Section -->
-        <section id="about" class="mb-12">
-            <div class="flex flex-col lg:flex-row items-center justify-between mb-8">
-                <div class="lg:w-1/2 mb-4 lg:mb-0">
-                    <img src="path/to/image1.jpg" alt="About Image" class="w-full rounded-lg">
-                </div>
-                <div class="lg:w-1/2 lg:pl-8">
-                    <h2 class="text-3xl font-bold mb-4">About Me (Resume)</h2>
-                    <p class="mb-4">Hi, I am Rama Srinivasan, an anthropologist, author, academic, consultant, and feminist.</p>
-                    <p class="mb-4">Main topics for research, writing, and consultancy:</p>
-                    <ul class="list-disc list-inside mb-4">
-                        <li>Law, Gender, Sexuality</li>
-                        <li>Marriage, Migration, Family, Kinship</li>
-                        <li>Culture, Cinema, Language</li>
-                    </ul>
-                    <p class="mb-4">Email: <a href="mailto:rama_srinivasan@alumni.brown.edu" class="text-blue-custom">rama_srinivasan@alumni.brown.edu</a></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- RE-NUP Section -->
-        <section id="re-nup" class="mb-12">
-            <div class="flex flex-col lg:flex-row items-center justify-between mb-8">
-                <div class="lg:w-1/2 lg:pl-8">
-                    <h2 class="text-3xl font-bold mb-4">RE-NUP</h2>
-                    <p class="mb-4">Current Project: Spousal Reunification and Integration Laws in Europe</p>
-                    <p class="mb-4">RE-NUP tracks the lives of South Asian immigrants in Germany, Italy, and France. In particular, I am interested in the experiences of married couples and families who need to apply for spousal/family visas and attend language and cultural classes as part of the integration process.</p>
-                    <p>If you are interested in finding out more <a href="#" class="text-blue-custom">click here</a>. If you would like to join the project as a research participant please get in touch at <a href="mailto:rama.srinivasan@unive.it" class="text-blue-custom">rama.srinivasan@unive.it</a>.</p>
-                </div>
-                <div class="lg:w-1/2 mb-4 lg:mb-0">
-                    <img src="path/to/image2.jpg" alt="Project Image" class="w-full rounded-lg">
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section id="publications" class="mb-12">
-            <div class="flex flex-col lg:flex-row items-center justify-between mb-8">
-                <div class="lg:w-1/2 mb-4 lg:mb-0">
-                    <img src="path/to/image3.jpg" alt="Publications Image" class="w-full rounded-lg">
-                </div>
-                <div class="lg:w-1/2 lg:pl-8">
-                    <h2 class="text-3xl font-bold mb-4">Publications</h2>
-                    <h3 class="text-xl font-bold mb-2">Courting Desire: Litigating for Love in North India</h3>
-                    <p class="mb-4">Inquiries into marital patterns can serve as an effective lens to analyze social structures and material cultures not only on the question of sexuality, but also on the nature of a private citizen’s engagement with state and law. Tracing organically evolving notions of sexual consent and legal subjectivity, Courting Desire underlines how non-normative decisions regarding marriage become possible in a region otherwise known for high instances of honor killings and rigid kinship structures.</p>
-                    <p>Check out my podcast interview for the New Books Network <a href="#" class="text-blue-custom">here</a>.</p>
-                    <p>For more details on the book, information regarding its reception and links to other academic and mainstream publications <a href="#" class="text-blue-custom">click here</a>.</p>
-                </div>
-            </div>
-        </section>
-
+<header class="bg-white shadow">
+  <nav class="container mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <a href="#" class="text-3xl font-bold text-gray-900">Rama Srinivasan</a>
+      <div class="hidden md:flex items-center space-x-1">
+        <a href="#about" class="py-5 px-3 text-gray-700 hover:text-gray-900 transition ease-in-out duration-150">About</a>
+        <a href="#projects" class="py-5 px-3 text-gray-700 hover:text-gray-900 transition ease-in-out duration-150">Projects</a>
+        <a href="#publications" class="py-5 px-3 text-gray-700 hover:text-gray-900 transition ease-in-out duration-150">Publications</a>
+        <a href="#contact" class="py-5 px-3 text-gray-700 hover:text-gray-900 transition ease-in-out duration-150">Contact</a>
+      </div>
     </div>
+  </nav>
+</header>
 
-    <!-- Footer -->
-    <footer class="bg-blue-custom py-4 mt-8">
-        <div class="container mx-auto text-center">
-            <p class="text-white-custom">&copy; 2024 Rama Srinivasan. All Rights Reserved.</p>
-        </div>
-    </footer>
+<main>
+  <section id="about" class="bg-white py-8">
+    <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+        About Me
+      </h1>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <div class="flex flex-col w-full md:w-2/3 justify-center items-start text-center md:text-left">
+        <p class="text-sm md:text-base text-gray-600 mb-4">
+          I am an anthropologist, author, and feminist with a focus on Law, Gender, and Sexuality.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-gray-300 py-8">
+    <div class="container mx-auto px-6 py-10">
+      <h2 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
+        Current Projects
+      </h2>
+      <!-- Project cards here -->
+    </div>
+  </section>
+
+  <section id="publications" class="bg-white py-8">
+    <div class="container mx-auto px-6 py-10">
+      <h2 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
+        Publications
+      </h2>
+      <!-- Publications list here -->
+    </div>
+  </section>
+
+  <section id="contact" class="bg-gray-300 py-8">
+    <div class="container mx-auto px-6 py-10">
+      <h2 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
+        Contact
+      </h2>
+      <!-- Contact form here -->
+    </div>
+  </section>
+</main>
+
+<footer class="bg-white">
+  <div class="container mx-auto px-6 py-4">
+    <p class="text-gray-700 text-center">
+      Rama Srinivasan © 2024
+    </p>
+  </div>
+</footer>
 
 </body>
-
 </html>

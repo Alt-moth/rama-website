@@ -7,32 +7,51 @@
     <title>Rama Srinivasan</title>
     <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .bg-blue-custom {
+            background-color: #007bff;
+        }
+
+        .text-blue-custom {
+            color: #007bff;
+        }
+
+        .text-white-custom {
+            color: #fff;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="font-sans bg-blue-50">
 
-    <!-- Navbar -->
-    <nav class="bg-gray-900 text-gray-100 p-4">
+    <!-- Header -->
+    <header class="bg-blue-custom py-4">
         <div class="container mx-auto flex justify-between items-center">
-            <span class="font-bold text-xl">Rama Srinivasan</span>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:text-gray-200">Home</a></li>
-                <li><a href="#about" class="hover:text-gray-200">About Me</a></li>
-                <li><a href="#workshops" class="hover:text-gray-200">Writing Workshops</a></li>
-                <li><a href="#re-nup" class="hover:text-gray-200">RE-NUP</a></li>
-                <li><a href="#publications" class="hover:text-gray-200">Publications</a></li>
-            </ul>
+            <h1 class="text-3xl font-bold text-white-custom">Rama Srinivasan</h1>
+            <nav>
+                <ul class="flex space-x-4 text-white-custom">
+                    <li><a href="#" class="hover:text-white">Home</a></li>
+                    <li><a href="#about" class="hover:text-white">About Me</a></li>
+                    <li><a href="#workshops" class="hover:text-white">Writing Workshops</a></li>
+                    <li><a href="#re-nup" class="hover:text-white">RE-NUP</a></li>
+                    <li><a href="#publications" class="hover:text-white">Publications</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <!-- Main Content -->
     <div class="container mx-auto mt-8">
 
         <!-- About Section -->
-        <section id="about" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">About Me (Resume)</h2>
-            <div class="flex flex-wrap mb-4">
-                <div class="w-full md:w-1/2">
+        <section id="about" class="mb-12">
+            <div class="flex flex-col lg:flex-row items-center justify-between mb-8">
+                <div class="lg:w-1/2 mb-4 lg:mb-0">
+                    <img src="path/to/image1.jpg" alt="About Image" class="w-full rounded-lg">
+                </div>
+                <div class="lg:w-1/2 lg:pl-8">
+                    <h2 class="text-3xl font-bold mb-4">About Me (Resume)</h2>
                     <p class="mb-4">Hi, I am Rama Srinivasan, an anthropologist, author, academic, consultant, and feminist.</p>
                     <p class="mb-4">Main topics for research, writing, and consultancy:</p>
                     <ul class="list-disc list-inside mb-4">
@@ -40,46 +59,50 @@
                         <li>Marriage, Migration, Family, Kinship</li>
                         <li>Culture, Cinema, Language</li>
                     </ul>
-                    <p>Email: <a href="mailto:rama_srinivasan@alumni.brown.edu" class="text-blue-500">rama_srinivasan@alumni.brown.edu</a></p>
-                </div>
-                <div class="w-full md:w-1/2 flex justify-center">
-                    <img src="path/to/image.jpg" alt="Rama Srinivasan" class="w-64 h-auto">
+                    <p class="mb-4">Email: <a href="mailto:rama_srinivasan@alumni.brown.edu" class="text-blue-custom">rama_srinivasan@alumni.brown.edu</a></p>
                 </div>
             </div>
         </section>
 
         <!-- RE-NUP Section -->
-        <section id="re-nup" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">RE-NUP</h2>
-            <div class="flex flex-wrap mb-4">
-                <div class="w-full md:w-1/2">
+        <section id="re-nup" class="mb-12">
+            <div class="flex flex-col lg:flex-row items-center justify-between mb-8">
+                <div class="lg:w-1/2 lg:pl-8">
+                    <h2 class="text-3xl font-bold mb-4">RE-NUP</h2>
                     <p class="mb-4">Current Project: Spousal Reunification and Integration Laws in Europe</p>
                     <p class="mb-4">RE-NUP tracks the lives of South Asian immigrants in Germany, Italy, and France. In particular, I am interested in the experiences of married couples and families who need to apply for spousal/family visas and attend language and cultural classes as part of the integration process.</p>
-                    <p>If you are interested in finding out more <a href="#" class="text-blue-500">click here</a>. If you would like to join the project as a research participant please get in touch at <a href="mailto:rama.srinivasan@unive.it" class="text-blue-500">rama.srinivasan@unive.it</a>.</p>
+                    <p>If you are interested in finding out more <a href="#" class="text-blue-custom">click here</a>. If you would like to join the project as a research participant please get in touch at <a href="mailto:rama.srinivasan@unive.it" class="text-blue-custom">rama.srinivasan@unive.it</a>.</p>
                 </div>
-                <div class="w-full md:w-1/2 flex justify-center">
-                    <img src="path/to/project_image.jpg" alt="RE-NUP Project" class="w-64 h-auto">
+                <div class="lg:w-1/2 mb-4 lg:mb-0">
+                    <img src="path/to/image2.jpg" alt="Project Image" class="w-full rounded-lg">
                 </div>
             </div>
         </section>
 
         <!-- Publications Section -->
-        <section id="publications" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Publications</h2>
-            <h3 class="text-lg font-bold mb-2">Courting Desire: Litigating for Love in North India</h3>
-            <div class="flex flex-wrap mb-4">
-                <div class="w-full md:w-1/2">
-                    <p class="mb-4">Inquiries into marital patterns can serve as an effective lens to analyze social structures and material cultures not only on the question of sexuality, but also on the nature of a private citizen’s engagement with state and law. Tracing organically evolving notions of sexual consent and legal subjectivity, Courting Desire underlines how non-normative decisions regarding marriage become possible in a region otherwise known for high instances of honor killings and rigid kinship structures.</p>
-                    <p>Check out my podcast interview for the New Books Network <a href="#" class="text-blue-500">here</a>.</p>
-                    <p>For more details on the book, information regarding its reception and links to other academic and mainstream publications <a href="#" class="text-blue-500">click here</a>.</p>
+        <section id="publications" class="mb-12">
+            <div class="flex flex-col lg:flex-row items-center justify-between mb-8">
+                <div class="lg:w-1/2 mb-4 lg:mb-0">
+                    <img src="path/to/image3.jpg" alt="Publications Image" class="w-full rounded-lg">
                 </div>
-                <div class="w-full md:w-1/2 flex justify-center">
-                    <img src="path/to/courting_desire_image.jpg" alt="Courting Desire Book" class="w-64 h-auto">
+                <div class="lg:w-1/2 lg:pl-8">
+                    <h2 class="text-3xl font-bold mb-4">Publications</h2>
+                    <h3 class="text-xl font-bold mb-2">Courting Desire: Litigating for Love in North India</h3>
+                    <p class="mb-4">Inquiries into marital patterns can serve as an effective lens to analyze social structures and material cultures not only on the question of sexuality, but also on the nature of a private citizen’s engagement with state and law. Tracing organically evolving notions of sexual consent and legal subjectivity, Courting Desire underlines how non-normative decisions regarding marriage become possible in a region otherwise known for high instances of honor killings and rigid kinship structures.</p>
+                    <p>Check out my podcast interview for the New Books Network <a href="#" class="text-blue-custom">here</a>.</p>
+                    <p>For more details on the book, information regarding its reception and links to other academic and mainstream publications <a href="#" class="text-blue-custom">click here</a>.</p>
                 </div>
             </div>
         </section>
 
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-custom py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p class="text-white-custom">&copy; 2024 Rama Srinivasan. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 

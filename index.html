@@ -1,137 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Researcher Portal</title>
+    <title>Rama Srinivasan</title>
+    <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Custom Styles */
-        /* Override Tailwind CSS or add custom styles here */
-        /* Example: */
-        /* .section-title {
-            font-size: 2.5rem;
-            color: #4a5568;
-            margin-bottom: 1.5rem;
-        } */
-    </style>
 </head>
-<body class="bg-gray-100 font-sans">
 
-    <!-- Navigation -->
-    <nav class="bg-blue-500 py-4">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <a href="#" class="text-white text-lg font-semibold">Researcher Portal</a>
-            <ul class="flex space-x-6 text-white">
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-900 text-gray-100 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <span class="font-bold text-xl">Rama Srinivasan</span>
+            <ul class="flex space-x-4">
                 <li><a href="#" class="hover:text-gray-200">Home</a></li>
-                <li><a href="#" class="hover:text-gray-200">About</a></li>
-                <li><a href="#" class="hover:text-gray-200">Services</a></li>
-                <li><a href="#" class="hover:text-gray-200">Publications</a></li>
-                <li><a href="#" class="hover:text-gray-200">Contact</a></li>
+                <li><a href="#about" class="hover:text-gray-200">About Me</a></li>
+                <li><a href="#workshops" class="hover:text-gray-200">Writing Workshops</a></li>
+                <li><a href="#re-nup" class="hover:text-gray-200">RE-NUP</a></li>
+                <li><a href="#publications" class="hover:text-gray-200">Publications</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="bg-gray-800 text-white py-20">
-        <div class="container mx-auto px-4 flex items-center">
-            <div class="w-full md:w-1/2">
-                <h1 class="text-4xl md:text-6xl font-semibold leading-tight mb-4">Welcome to Researcher Portal</h1>
-                <p class="text-lg md:text-xl leading-relaxed mb-6">Explore the realms of knowledge and innovation.</p>
-                <a href="#" class="bg-blue-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-600 transition duration-300 inline-block">Get Started</a>
-            </div>
-            <div class="w-full md:w-1/2 md:flex justify-center">
-                <img src="https://via.placeholder.com/600x400" alt="Researcher Image" class="rounded-lg shadow-lg">
-            </div>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <div class="container mx-auto mt-8">
 
-    <!-- About Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-8">About Us</h2>
-            <p class="text-lg leading-relaxed mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat ante vel ligula accumsan vehicula. Aliquam nec blandit metus. Vivamus vehicula diam et libero cursus, quis sagittis nisi semper.</p>
-            <a href="#" class="text-blue-500 font-semibold hover:underline inline-block">Learn More</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="bg-gray-100 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-8">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Research Catalog</h3>
-                    <p>Explore our extensive catalog of research papers, articles, and studies.</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Collaboration Opportunities</h3>
-                    <p>Connect with fellow researchers and find opportunities for collaboration.</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Resource Center</h3>
-                    <p>Access tools, datasets, and resources to support your research endeavors.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Recent Publications Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-8">Recent Publications</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Sample publication cards -->
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Publication Title</h3>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#" class="text-blue-500 font-semibold hover:underline inline-block">Read More</a>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Publication Title</h3>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#" class="text-blue-500 font-semibold hover:underline inline-block">Read More</a>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Publication Title</h3>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#" class="text-blue-500 font-semibold hover:underline inline-block">Read More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="bg-gray-800 text-white py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-8">Contact Us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat ante vel ligula accumsan vehicula.</p>
-                    <ul class="mb-4">
-                        <li><span class="font-semibold">Address:</span> 123 Research Ave, City, Country</li>
-                        <li><span class="font-semibold">Phone:</span> +1 234 567 890</li>
-                        <li><span class="font-semibold">Email:</span> info@researcherportal.com</li>
+        <!-- About Section -->
+        <section id="about" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">About Me (Resume)</h2>
+            <div class="flex flex-wrap mb-4">
+                <div class="w-full md:w-1/2">
+                    <p class="mb-4">Hi, I am Rama Srinivasan, an anthropologist, author, academic, consultant, and feminist.</p>
+                    <p class="mb-4">Main topics for research, writing, and consultancy:</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Law, Gender, Sexuality</li>
+                        <li>Marriage, Migration, Family, Kinship</li>
+                        <li>Culture, Cinema, Language</li>
                     </ul>
+                    <p>Email: <a href="mailto:rama_srinivasan@alumni.brown.edu" class="text-blue-500">rama_srinivasan@alumni.brown.edu</a></p>
                 </div>
-                <div>
-                    <form action="#" method="POST" class="grid grid-cols-1 gap-4">
-                        <input type="text" name="name" placeholder="Your Name" class="p-4 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500">
-                        <input type="email" name="email" placeholder="Your Email" class="p-4 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500">
-                        <textarea name="message" rows="5" placeholder="Your Message" class="p-4 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"></textarea>
-                        <button type="submit" class="bg-blue-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-600 transition duration-300">Send Message</button>
-                    </form>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="path/to/image.jpg" alt="Rama Srinivasan" class="w-64 h-auto">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="container mx-auto px-4">
-            <p class="text-center">&copy; 2024 Researcher Portal. All rights reserved.</p>
-        </div>
-    </footer>
+        <!-- RE-NUP Section -->
+        <section id="re-nup" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">RE-NUP</h2>
+            <div class="flex flex-wrap mb-4">
+                <div class="w-full md:w-1/2">
+                    <p class="mb-4">Current Project: Spousal Reunification and Integration Laws in Europe</p>
+                    <p class="mb-4">RE-NUP tracks the lives of South Asian immigrants in Germany, Italy, and France. In particular, I am interested in the experiences of married couples and families who need to apply for spousal/family visas and attend language and cultural classes as part of the integration process.</p>
+                    <p>If you are interested in finding out more <a href="#" class="text-blue-500">click here</a>. If you would like to join the project as a research participant please get in touch at <a href="mailto:rama.srinivasan@unive.it" class="text-blue-500">rama.srinivasan@unive.it</a>.</p>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="path/to/project_image.jpg" alt="RE-NUP Project" class="w-64 h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Publications</h2>
+            <h3 class="text-lg font-bold mb-2">Courting Desire: Litigating for Love in North India</h3>
+            <div class="flex flex-wrap mb-4">
+                <div class="w-full md:w-1/2">
+                    <p class="mb-4">Inquiries into marital patterns can serve as an effective lens to analyze social structures and material cultures not only on the question of sexuality, but also on the nature of a private citizen’s engagement with state and law. Tracing organically evolving notions of sexual consent and legal subjectivity, Courting Desire underlines how non-normative decisions regarding marriage become possible in a region otherwise known for high instances of honor killings and rigid kinship structures.</p>
+                    <p>Check out my podcast interview for the New Books Network <a href="#" class="text-blue-500">here</a>.</p>
+                    <p>For more details on the book, information regarding its reception and links to other academic and mainstream publications <a href="#" class="text-blue-500">click here</a>.</p>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="path/to/courting_desire_image.jpg" alt="Courting Desire Book" class="w-64 h-auto">
+                </div>
+            </div>
+        </section>
+
+    </div>
 
 </body>
+
 </html>

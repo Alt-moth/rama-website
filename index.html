@@ -9,41 +9,25 @@
     
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
     
-<header class="bg-white shadow-sm">
-  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-    <div class="flex h-16 items-center justify-between">
-      <div class="md:flex md:items-center md:gap-12">
-        <a class="block text-teal-600" href="#">
-          <!-- SVG icon omitted for brevity -->
-        </a>
-      </div>
-
-      <div class="hidden md:block">
-        <nav aria-label="Global">
-          <ul class="flex items-center gap-6 text-sm">
-            <li><a class="text-gray-500 hover:text-teal-600 transition" href="#">Home</a></li>
-            <li><a class="text-gray-500 hover:text-teal-600 transition" href="#">About Me (Resume)</a></li>
-            <li class="relative group">
-                <a class="text-gray-500 hover:text-teal-600 transition cursor-pointer">RE-NUP</a>
-                <ul class="absolute hidden group-hover:block bg-white border border-gray-200 shadow-lg rounded-md mt-1 divide-y divide-gray-100 overflow-hidden" style="min-width: 200px;">
-                  <li><a class="text-gray-700 block px-4 py-2 text-sm hover:bg-teal-600 hover:text-white transition" href="#">Option 1</a></li>
-                  <li><a class="text-gray-700 block px-4 py-2 text-sm hover:bg-teal-600 hover:text-white transition" href="#">Option 2</a></li>
-                  <li><a class="text-gray-700 block px-4 py-2 text-sm hover:bg-teal-600 hover:text-white transition" href="#">Option 3</a></li>
-                </ul>
-            </li>
-            <li><a class="text-gray-500 hover:text-teal-600 transition" href="#">Publications</a></li>
-            <li><a class="text-gray-500 hover:text-teal-600 transition" href="#">Blog</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="flex items-center gap-4">
-        <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow hover:bg-teal-700 transition" href="#">Contact</a>
-        <button class="rounded bg-gray-100 p-2 text-gray-600 hover:bg-gray-200 transition">
-          <!-- Hamburger icon SVG omitted for brevity -->
-        </button>
-      </div>
-    </div>
+<header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">Tailblocks</span>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-900">First Link</a>
+      <a class="mr-5 hover:text-gray-900">Second Link</a>
+      <a class="mr-5 hover:text-gray-900">Third Link</a>
+      <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+    </nav>
+    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
   </div>
 </header>
     
